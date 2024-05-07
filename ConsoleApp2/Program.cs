@@ -33,6 +33,22 @@ namespace ConsoleApp2
             Console.WriteLine();
             Console.WriteLine("Dados da Conta: ");
             Console.WriteLine(conta);
+            Console.WriteLine();
+
+            Console.Write("Entre com um valor para depósito: $");
+            double deposito = Convert.ToDouble(Console.ReadLine(), CultureInfo.InvariantCulture);
+            conta.Deposito(deposito);
+
+            Console.WriteLine("Dados da conta atualizados");
+            Console.WriteLine(conta);
+            Console.WriteLine();
+
+            Console.Write("Entre com um valor para saque: $");
+            double saque = Convert.ToDouble(Console.ReadLine(), CultureInfo.InvariantCulture);
+            conta.Saque(saque);
+
+            Console.WriteLine("Dados da conta atualizados");
+            Console.WriteLine(conta);
         }
     }
 }
